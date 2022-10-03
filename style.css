@@ -1,0 +1,73 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    animation-name: animation1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite ;
+}
+.aos {
+    width: 100px;
+    height: 100px;
+    background-color:blanchedalmond;
+    animation-name: animation2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-play-state: running;
+
+}
+.aos2{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    animation-name: animation3;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(1,.69,.29,.94) ;
+}
+@keyframes animation1 {
+    from {
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+    }
+    to {
+        background-color: aquamarine;
+
+    }
+}
+
+@keyframes animation2 {
+from{
+    margin-left: 0;
+}
+to {
+    margin-left: 500px;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+}
+@keyframes animation3 {
+    0%{
+        background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin-left: 800px;
+       
+
+    }
+    100% {
+        margin-left: 0px;
+        width: 300px;
+        height: 300px;
+        background-color: darkgrey;
+    }
+}
+
